@@ -1,0 +1,222 @@
+/* Base CSS Start */
+
+/* Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&family=Rajdhani:wght@300;400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Khula", sans-serif;
+  background: #000;
+  scroll-behavior: smooth;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Hero Section HTML Start */
+
+.hero__wrapper {
+  background: url(images/hero-bg.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 80px 0 50px;
+}
+
+.logo img {
+  max-width: 200px;
+}
+
+.logo__text a {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  display: none;
+}
+
+.logo__text h2 {
+  font-size: 70px;
+  font-weight: 600;
+  line-height: 100%;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.hero__content h4 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.hero__content h5 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.hero__content > a {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff8b0;
+  letter-spacing: 4px;
+  text-shadow: 0 0 8px #ffd700, 0 0 16px #ffd700, 0 0 0px #ffbf00,
+    0 0 8px #ffaa00;
+}
+
+.brand__logos img {
+  width: 80%;
+}
+
+.social__info {
+  padding-top: 20px;
+}
+
+.social__info,
+.social__info__text {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.social__info__text {
+  padding-top: 10px;
+}
+
+.social__info__text li {
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.social__info__text li.line {
+  width: 50px;
+  height: 1px;
+  background: #fff;
+}
+
+.social__media {
+  margin-left: 20px;
+}
+
+.social__media li a img {
+  max-width: 40px;
+}
+
+.copyright p {
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  padding-top: 60px;
+  margin-bottom: 0;
+}
+
+/* Hero Section HTML End */
+
+/* Base CSS End */
+
+/* Resposnive CSS for Mobile */
+
+@media (max-width: 767px) {
+  .hero__wrapper {
+    padding: 50px 10px;
+  }
+
+  .logo {
+    gap: 10px;
+  }
+
+  .logo img {
+    max-width: 150px;
+  }
+
+  .logo__text a {
+    font-size: 20px;
+    display: block;
+  }
+
+  .logo__text h2 {
+    font-size: 42px;
+  }
+
+  .hero__content h5 {
+    font-size: 21px;
+    margin: 0;
+  }
+
+  .hero__content > a {
+    font-size: 28px;
+    letter-spacing: 2px;
+  }
+
+  .brand__logos img {
+    width: 100%;
+  }
+
+  .social__info {
+    flex-direction: column;
+  }
+
+  .social__info__text li {
+    font-size: 24px;
+  }
+
+  .copyright p {
+    font-size: 18px;
+    padding-top: 40px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 400px) {
+  .logo__text a {
+    font-size: 18px;
+    display: block;
+  }
+
+  .logo__text h2 {
+    font-size: 36px;
+  }
+
+  .hero__content h5 {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .hero__content > a {
+    font-size: 28px;
+    letter-spacing: 2px;
+  }
+
+  .social__info__text li {
+    font-size: 20px;
+  }
+
+  .copyright p {
+    font-size: 15px;
+    padding-top: 30px;
+  }
+}
